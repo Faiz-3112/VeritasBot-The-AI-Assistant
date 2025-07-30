@@ -1,0 +1,54 @@
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env*
+
+# Django
+*.sqlite3
+db.sqlite3
+/media
+/staticfiles
+
+# React
+/build
+/dist
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# System
+.DS_Store
+Thumbs.db
+*.log
+
+# VSCode
+.vscode/
+
+# CLI mode
+CLI mode/.env
+
+# Backend
+ai-assistant-django-backend/.env
+
+# Virtualenv
+ai_assistant_env/
+
+# Misc
+*.pem
+*.key
+*.crt
+*.p12
+*.bak
+*.old
+*.swp
+*.swo
+
+# Ignore feedback and user data
+CLI mode/user_feedback.json
