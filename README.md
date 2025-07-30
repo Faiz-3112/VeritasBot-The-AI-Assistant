@@ -44,7 +44,7 @@ A modern, full-stack AI assistant web application with advanced NLP features, bu
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/veritasbot.git
+git clone [https://github.com/yourusername/veritasbot](https://github.com/Faiz-3112/VeritasBot-The-AI-Assistant).git
 cd veritasbot
 ```
 
