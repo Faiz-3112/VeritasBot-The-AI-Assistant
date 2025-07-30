@@ -1,0 +1,99 @@
+.app-header.glass-morphism {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1.2rem 0 1.2rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.04);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+[data-theme="light"] .app-header.glass-morphism {
+  background: linear-gradient(120deg, rgba(255,255,255,0.82) 60%, rgba(240,245,255,0.7) 100%);
+  color: #232323;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 4px 24px 0 rgba(76,175,80,0.04);
+}
+[data-theme="dark"] .app-header.glass-morphism {
+  background: rgba(30, 30, 40, 0.7);
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.12);
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.app-title.veritas-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #4caf50;
+  margin-bottom: 0.2rem;
+}
+[data-theme="dark"] .app-title.veritas-title {
+  color: #7c3aed !important; /* Bright violet accent for dark mode */
+  text-shadow: 0 2px 12px rgba(124,58,237,0.18), 0 2px 8px rgba(0,0,0,0.5);
+}
+.app-subtitle.veritas-tagline {
+  font-size: 1.1rem;
+  color: #57b2d6;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-left: auto;
+}
+.theme-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.theme-toggle:hover {
+  background: rgba(76, 175, 80, 0.08);
+}
+.theme-icon {
+  font-size: 1.6rem;
+}
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  .logo-section {
+    align-items: flex-start;
+  }
+  .app-title.veritas-title {
+    font-size: 1.3rem;
+  }
+  .app-subtitle.veritas-tagline {
+    font-size: 0.95rem;
+  }
+}

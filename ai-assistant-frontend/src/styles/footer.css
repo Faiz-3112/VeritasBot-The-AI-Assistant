@@ -1,0 +1,105 @@
+.modern-footer.glass-footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 0 1.2rem 0;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background 0.3s;
+}
+[data-theme="light"] .modern-footer.glass-footer {
+  background: rgba(255,255,255,0.85);
+  color: #232323;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+[data-theme="dark"] .modern-footer.glass-footer {
+  background: rgba(30, 30, 40, 0.7);
+  color: #eee;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.footer-main {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+.footer-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #4caf50;
+}
+.footer-made {
+  font-size: 0.98rem;
+  color: #888;
+  font-weight: 500;
+}
+.footer-name {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #4caf50;
+}
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+.footer-contact span {
+  color: #888;
+  font-size: 0.98rem;
+  margin-right: 0.3rem;
+}
+.footer-email {
+  color: #888;
+  font-size: 0.95rem;
+  margin-left: 0.5rem;
+}
+.footer-contact a {
+  color: #232323;
+  opacity: 0.85;
+  transition: color 0.2s, opacity 0.2s;
+}
+.footer-contact a:hover {
+  color: #7c3aed;
+  opacity: 1;
+}
+[data-theme="dark"] .footer-contact a {
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    padding: 0 1rem;
+  }
+  .footer-contact {
+    gap: 0.7rem;
+    font-size: 0.97rem;
+  }
+}
+@media (max-width: 600px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+  .modern-footer.glass-footer {
+    padding: 0.7rem 0;
+  }
+}
